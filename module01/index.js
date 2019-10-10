@@ -139,33 +139,34 @@
 // const moneyIndia = '80 кредитов';
 // const moneyJamaica = '120 кредитов';
 
-// let userInput = prompt('Укажитте страну');
+// let userInput = prompt(`Укажитте страну доставки ${countryChina}, ${countryChile}, ${countryAustralia}, ${countryIndia}, ${countryJamaica}.`);
+// userInput = userInput.toLowerCase()
 
-
-// switch(userInput){
+// switch(userInput) {
 //   case 'китай':
-//   alert(`Доставка в ${countryChina.toLowerCase()} будет стоить ${moneyChina} кредитов`);
+//   alert(`Доставка в ${countryChina} будет стоить ${moneyChina} кредитов`);
 //   break;
 
 //   case 'чили':
-//   alert(`Доставка в ${countryChile.toLowerCase()} будет стоить ${moneyChile} кредитов`);
+//   alert(`Доставка в ${countryChile} будет стоить ${moneyChile} кредитов`);
 //   break;
 
 //   case 'австралия':
-//   alert(`Доставка в ${countryAustralia.toLowerCase()} будет стоить ${moneyAustralia} кредитов`);
+//   alert(`Доставка в ${countryAustralia} будет стоить ${moneyAustralia} кредитов`);
 //   break;
 
 //   case 'индия':
-//   alert(`Доставка в ${countryIndia.toLowerCase()} будет стоить ${moneyIndia} кредитов`);
+//   alert(`Доставка в ${countryIndia} будет стоить ${moneyIndia} кредитов`);
 //   break;
 
 //   case 'ямайка':
-//   alert(`Доставка в ${countryJamaica.toLowerCase()} будет стоить ${moneyJamaica} кредитов`);
+//   alert(`Доставка в ${countryJamaica} будет стоить ${moneyJamaica} кредитов`);
 //   break;
 
 //   default:
 //     alert('В вашей стране доставка не доступна');
 // }
+
 
 // // if(userInput === countryChina) {
 // //   alert('Стоемость доставки ' + moneyChina);
