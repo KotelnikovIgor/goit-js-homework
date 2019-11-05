@@ -2,13 +2,14 @@ import './styles.css';
 import fetchCountries from './utils/fetchCountries.js';
 import PNotify from 'pnotify/dist/es/PNotify.js';
 import PNotifyStyleMaterial from 'pnotify/dist/es/PNotifyStyleMaterial.js';
+import debounce from 'lodash.debounce';
 
 const input = document.querySelector('.input');
 // console.log(input);
 const ul = document.querySelector('.todo');
 // console.log(ul);
 
-input.addEventListener('input', e => {
+input.addEventListener('input', debounce(e => {
   fetchCountries(e.target.value)
     .then(data => {
       if (data.length <= 11 && data.length !== 1) {
@@ -41,4 +42,4 @@ input.addEventListener('input', e => {
       }
     })
     .catch(err => console.log(err));
-});
+}), 1500);
